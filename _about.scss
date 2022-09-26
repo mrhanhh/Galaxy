@@ -1,0 +1,26 @@
+#about{
+    padding-top: 50px;
+    text-align: center;
+    @include page-color(rgb(38,41,49));
+    .about-box{
+        @include grid(1fr 1fr 1fr);
+        padding: 100px;
+        article{
+            h1{
+                font-size: 30px;
+            }
+            p{
+                padding-top: 100px;
+                opacity: 0.8;
+            }
+        }
+        figure{
+            img{
+                height: 550px;
+                width: 500px;
+                margin-top: -100px;
+                margin-left: 75px;
+            }
+        }
+    }
+}

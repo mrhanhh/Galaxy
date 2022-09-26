@@ -1,0 +1,22 @@
+#contact{
+    @include grid(2fr 1fr 1fr 1fr 1fr);
+    @include page-color(rgb(38,41,49));
+    padding: 100px;
+    a{
+        text-decoration: none;
+        color: white;
+        opacity: 0.8;
+    }
+    .contact-info{
+        margin-top: -50px;
+        img{
+            width: 150px;
+            height: 75px;
+            padding-bottom: 10px;
+        }
+    }
+    .contact-atribut{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

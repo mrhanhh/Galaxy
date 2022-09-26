@@ -1,0 +1,36 @@
+header {
+  @include page-color();
+  @include grid();
+  position: fixed;
+  width: 100%;
+  z-index: 1111;
+  .header-logo {
+    @include flex();
+    img {
+      width: 150px;
+      height: 75px;
+    }
+  }
+  .header-list {
+    @include flex(space-around);
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: rgb(221, 94, 57);
+      }
+    }
+  }
+  .header-button {
+    @include flex();
+    button {
+      @include button();
+    }
+    button:hover {
+      @include butt-hover();
+    }
+  }
+}

@@ -1,0 +1,6 @@
+footer{
+    @include grid(4fr 1fr 1fr);
+    padding: 25px 100px;
+    box-shadow: 0 0 10px white;
+    @include page-color(rgb(38,41,49));
+}

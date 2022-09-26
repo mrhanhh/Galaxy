@@ -1,0 +1,40 @@
+#pricing{
+    @include grid(1fr 1.5fr);
+    @include page-color();
+    padding: 50px;
+    main{
+        h1{
+            font-size: 30px;
+        a{
+            color: rgb(64,105,107);
+            font-size: 20px;
+            border: 3px solid rgb(64,105,107);
+            border-radius: 10px 10px 10px 10px;
+            padding: 5px 15px;
+        }
+        }
+        p{
+            opacity: 0.8;
+        }
+        .date-time{
+            @include flex(left);
+            padding: 30px 0;
+            .date{
+            @include flex();
+                padding-right: 30px;
+                border-right: 1px solid white
+            }
+            .time{
+            @include flex();
+                padding-left: 30px;
+                border-left: 1px solid white;
+            }
+        }
+        button{
+            @include button();
+        }
+        button:hover{
+            @include butt-hover();
+        }
+    }
+}

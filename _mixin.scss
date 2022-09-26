@@ -1,0 +1,30 @@
+@mixin button($background:rgb(221,94,57),$color:white) {
+    background-color: $background;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    font-weight: bolder;
+    a{
+        text-decoration: none;
+        color: $color;
+    }
+}
+@mixin butt-hover($background:white,$color:rgb(221,94,57)) {
+    background-color:$background;
+    a{
+        color: $color;
+    }
+}
+@mixin flex($justify:center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+@mixin grid($template:1fr 2fr 1fr) {
+    display: grid;
+    grid-template-columns: $template;
+}
+@mixin page-color($background: rgb(34,37,45),$color: white) {
+    background-color: $background;
+    color: $color;
+}
